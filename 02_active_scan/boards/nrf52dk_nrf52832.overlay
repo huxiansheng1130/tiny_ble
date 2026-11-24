@@ -1,0 +1,18 @@
+/*
+ * NCS 默认启用 SoftDevice Controller (nordic,bt-hci-sdc)。
+ * 本 Demo 依赖 Zephyr 开源 LL (BT_LL_SW_SPLIT) 的 radio HAL，
+ * 因此切回 zephyr,bt-hci-ll-sw-split。
+ */
+/ {
+	chosen {
+		zephyr,bt-hci = &bt_hci_controller;
+	};
+};
+
+&bt_hci_sdc {
+	status = "disabled";
+};
+
+&bt_hci_controller {
+	status = "okay";
+};

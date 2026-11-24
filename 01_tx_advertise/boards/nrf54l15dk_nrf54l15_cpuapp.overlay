@@ -1,0 +1,6 @@
+/*
+ * nRF54L15：直接使用 RADIO。
+ */
+&radio {
+	status = "okay";
+};

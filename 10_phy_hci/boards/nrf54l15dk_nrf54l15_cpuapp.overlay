@@ -1,0 +1,18 @@
+/*
+ * 启用与 RADIO 同域的 TIMER10 / DPPIC10，以及连接时基 TIMER20。
+ */
+&timer10 {
+	status = "okay";
+};
+
+&dppic10 {
+	status = "okay";
+};
+
+&radio {
+	status = "okay";
+};
+
+&timer20 {
+	status = "okay";
+};

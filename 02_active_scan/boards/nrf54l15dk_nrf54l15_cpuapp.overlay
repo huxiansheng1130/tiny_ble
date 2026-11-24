@@ -1,0 +1,14 @@
+/*
+ * 启用与 RADIO 同域的 TIMER10 / DPPIC10，供软件 TIFS 使用。
+ */
+&timer10 {
+	status = "okay";
+};
+
+&dppic10 {
+	status = "okay";
+};
+
+&radio {
+	status = "okay";
+};
